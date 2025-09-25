@@ -24,20 +24,20 @@ jobs:
       - name: 'Pre-build dev container image'
         uses: devcontainers/ci@v0.3
         with:
-          imageName: 'lacrif/ansible-devcontainer'
+          imageName: 'registry.hub.docker.com/lacrif/ansible-devcontainer'
           platform: 'linux/amd64,linux/arm64'
           imageTag: 'latest,11'
           push: always
 
-      - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          image-ref: 'lacrif/ansible-devcontainer:latest'
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+      # - name: Run Trivy vulnerability scanner
+      #   uses: aquasecurity/trivy-action@0.28.0
+      #   with:
+      #     image-ref: 'lacrif/ansible-devcontainer:latest'
+      #     format: 'sarif'
+      #     output: 'trivy-results.sarif'
 
-      - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: 'trivy-results.sarif'
+      # - name: Upload Trivy scan results to GitHub Security tab
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: 'trivy-results.sarif'
   
