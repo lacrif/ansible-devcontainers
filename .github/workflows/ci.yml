@@ -30,7 +30,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@0.28.0
         with:
-          image-ref: 'lacrif/debian-systemd:latest'
+          image-ref: 'lacrif/ansible-devcontaine:latest'
           format: 'sarif'
           output: 'trivy-results.sarif'
 
