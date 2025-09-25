@@ -118,5 +118,3 @@ ansible-lint playbooks/
 ## Auteur
 
 [![Static Badge](https://img.shields.io/badge/Lacrif-0000?style=flat&logo=github&logoColor=white&color=black&link=https%3A%2F%2Fgithub.com%2Flacrif)](https://github.com/lacrif)
-
-
