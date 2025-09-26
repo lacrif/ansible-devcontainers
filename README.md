@@ -10,7 +10,7 @@ Ce DevContainer fournit un environnement de développement complet pour l'infras
 
 ### Outils inclus
 
-- Ansible 11.0 
+- Ansible 11.X
 - Ansible Lint
 - Docker
 - YAML Lint
